@@ -33,7 +33,7 @@ function App() {
     <div className="App">
 <div className="head-div">
   <h3>Dashboard</h3>
-  <a href="#">source code<GitHubIcon fontSize="small"/></a>
+  <a href="https://github.com/PhilominaCA/component-reuse.git" target="_blank"  rel="noreferrer">source code<GitHubIcon fontSize="small"/></a>
   </div>
 <div className="cards">
 {cardDetail.map(({title,value,icon,borderColor})=><Card title={title} value={value} icon={icon} 

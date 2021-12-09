@@ -1,7 +1,5 @@
 import { ColorBox } from './ColorBox';
 
-
-
 export function Colorgrid() {
   const data = [
     {

@@ -66,5 +66,5 @@ export function AreaLineChart() {
       }
     ]
   };
-  return (<div style={{  }}><Line options={options} data={data} /></div>);
+  return (<div><Line options={options} data={data} /></div>);
 }

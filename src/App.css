@@ -1,30 +1,29 @@
 .App {
-  background-color: rgba(var(--bs-whwhitwite-rgb),var(--bs-bg-opacity)) !important;
-
+  background-color: rgba(var(--bs-whwhitwite-rgb),var(--bs-bg-opacity));
 }
 .head-div{
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding-left: 3rem;
-padding-right: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 h3{
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: "Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   color: #858796;
   font-size: 2rem;
-font-weight: 400;
+  font-weight: 400;
 }
 .card-div{
   display: flex;
   width: 14rem;
   height: 5rem;
-align-items: center;
-    justify-content: space-between;
-    border-radius: 5px;
-    box-shadow: 0 1rem 1.75rem 0 rgba(58,59,69,.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 1%;
-    background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 0 1rem 1.75rem 0 rgba(58,59,69,.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1%;
+  background-color: #fff;
 }
 .card-details{
   display: flex;
@@ -50,45 +49,45 @@ align-items: center;
 .cards{
   display: flex;
   justify-content: space-evenly;
-padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .task-progress
 {
-width:8rem;
-height: 0.5rem;
-margin-left: 0.5rem;
-border-radius: 70px;
+  width:8rem;
+  height: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 70px;
 }
 .red-progress
 {
   width: 30rem;
-    height: 1.05rem;
-    border-radius: 70px;
+  height: 1.05rem;
+  border-radius: 70px;
 }
 .warning-progress
 {
   width: 30rem;
-    height: 1.05rem;
-    border-radius: 70px;
+  height: 1.05rem;
+  border-radius: 70px;
 }
 .primary-progress
 {
   width: 30rem;
-    height: 1.05rem;
-    border-radius: 70px;
+  height: 1.05rem;
+  border-radius: 70px;
 }
 .info-progress
 {
   width: 30rem;
-    height: 1.05rem;
-    border-radius: 70px;
+  height: 1.05rem;
+  border-radius: 70px;
 }
 .success-progress
 {
   width: 30rem;
-    height: 1.05rem;
-    border-radius: 70px;
+  height: 1.05rem;
+  border-radius: 70px;
 }
 progress::-webkit-progress-bar {
   background-color: #dddfeb;
@@ -127,14 +126,6 @@ progress::-webkit-progress-bar {
   border-bottom-left-radius: 70px;
 }
 
-/*progress::-moz-progress-bar {
-  /* style rules 
-  background-color: #dddfeb;
-  border-radius: 70px;
-  border-top-left-radius: 70px;
-  border-bottom-left-radius: 70px;
-}*/
-
 .task-progress::-moz-progress-bar {
   background-color: #36b9cc;
   border-top-left-radius: 70px;
@@ -170,40 +161,37 @@ progress::-webkit-progress-bar {
   border-bottom-left-radius: 70px;
 }
 
-
 .progress-card{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-
-
 .project-title-div{
-display: flex;
-justify-content: space-between;
-font-weight: 700;
-font-size: small;
-color: #858796;
-padding-bottom:0.5rem;
-padding-top:1rem;
-font-family: "Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: small;
+  color: #858796;
+  padding-bottom:0.5rem;
+  padding-top:1rem;
+  font-family: "Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 .color-box{
   border-radius: .35rem;
-  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-font-size: 1rem;
-font-weight: 400;
-line-height: 1.5;
-box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15) ;
-padding: 1.25rem;
-text-align: left;
+  font-family: "Segoe UI""Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15) ;
+  padding: 1.25rem;
+  text-align: left;
 }
 .color-title{
   font-size: 1rem;
-font-weight: 400;
-min-height: 1px;
+  font-weight: 400;
+  min-height: 1px;
 }
 .color-code{
  font-size: small;
@@ -211,27 +199,27 @@ min-height: 1px;
 
 p{
   margin-top: 0;
-margin-bottom: 1rem;
-font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-font-size: 1rem;
-font-weight: 400;
-line-height: 1.5;
-color: #858796;
-text-align: left;
+  margin-bottom: 1rem;
+  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #858796;
+  text-align: left;
 }
 a{
   color: #4e73df;
-text-decoration: none;
-background-color: transparent;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .line-chart { 
   grid-area: linee;
   padding: 2rem;
-width:40rem;
-margin-left: 3rem;
-height: 22rem;
-box-shadow: 0 1rem 1.75rem 0 rgba(58,59,69,.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width:40rem;
+  margin-left: 3rem;
+  height: 22rem;
+  box-shadow: 0 1rem 1.75rem 0 rgba(58,59,69,.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .doughnut-chart {
@@ -239,9 +227,9 @@ box-shadow: 0 1rem 1.75rem 0 rgba(58,59,69,.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19
   margin-left: 49rem;
   grid-area: doughnut;
   box-shadow: 0 1rem 1.75rem 0 rgba(58,59,69,.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-width:23rem;
-height: 22rem;
-padding: 2rem;
+  width:23rem;
+  height: 22rem;
+  padding: 2rem;
 }
 
 .proj-prog-div {
@@ -275,7 +263,6 @@ padding: 2rem;
   box-shadow: 0 1rem 1.75rem 0 rgba(58,59,69,.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-left: 39.5rem;
   margin-top: -20rem; 
-
  }
 
 .charts-div{
@@ -289,4 +276,9 @@ padding: 2rem;
   color: #4e73df;
   justify-content: space-between;
   font-weight: 700;
+}
+
+.img-div{
+  width:450rem;
+  height:20rem;
 }
