@@ -1,38 +1,292 @@
 .App {
-  text-align: center;
-}
+  background-color: rgba(var(--bs-whwhitwite-rgb),var(--bs-bg-opacity)) !important;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head-div{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left: 3rem;
+padding-right: 3rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3{
+  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  color: #858796;
+  font-size: 2rem;
+font-weight: 400;
+}
+.card-div{
+  display: flex;
+  width: 14rem;
+  height: 5rem;
+align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 1rem 1.75rem 0 rgba(58,59,69,.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1%;
+    background-color: #fff;
+}
+.card-details{
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.card-title{
+  font-size: 0.8rem;
+  font-weight: 700 !important;
+}
+.card-value{
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #5a5c69;
+}
+.slider-div{
+  display: flex;
+  width: 10rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.cards{
+  display: flex;
+  justify-content: space-evenly;
+padding-bottom: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.task-progress
+{
+width:8rem;
+height: 0.5rem;
+margin-left: 0.5rem;
+border-radius: 70px;
+}
+.red-progress
+{
+  width: 30rem;
+    height: 1.05rem;
+    border-radius: 70px;
+}
+.warning-progress
+{
+  width: 30rem;
+    height: 1.05rem;
+    border-radius: 70px;
+}
+.primary-progress
+{
+  width: 30rem;
+    height: 1.05rem;
+    border-radius: 70px;
+}
+.info-progress
+{
+  width: 30rem;
+    height: 1.05rem;
+    border-radius: 70px;
+}
+.success-progress
+{
+  width: 30rem;
+    height: 1.05rem;
+    border-radius: 70px;
+}
+progress::-webkit-progress-bar {
+  background-color: #dddfeb;
+  border-radius: 70px;
+}
+.task-progress::-webkit-progress-value {
+  background-color: #36b9cc;
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
+}
+.red-progress::-webkit-progress-value {
+  background-color: #e74a3b;
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
+}
+.primary-progress::-webkit-progress-value {
+  background-color: #4e73df;
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
+}
+.success-progress::-webkit-progress-value {
+  background-color: #1cc88a;
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  border-top-right-radius: 70px;
+}
+.info-progress::-webkit-progress-value {
+  background-color: #36b9cc;
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
+}
+.warning-progress::-webkit-progress-value {
+  background-color: #f6c23e;
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*progress::-moz-progress-bar {
+  /* style rules 
+  background-color: #dddfeb;
+  border-radius: 70px;
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
+}*/
+
+.task-progress::-moz-progress-bar {
+  background-color: #36b9cc;
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
+}
+
+.red-progress::-moz-progress-bar {
+  background-color: #e74a3b;
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
+}
+
+.primary-progress::-moz-progress-bar {
+  background-color: #4e73df;
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
+}
+.success-progress::-moz-progress-bar {
+  background-color: #1cc88a;
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  border-top-right-radius: 70px;
+}
+.info-progress::-moz-progress-bar {
+  background-color: #36b9cc;
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
+}
+.warning-progress::-moz-progress-bar {
+  background-color: #f6c23e;
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
+}
+
+
+.progress-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+
+.project-title-div{
+display: flex;
+justify-content: space-between;
+font-weight: 700;
+font-size: small;
+color: #858796;
+padding-bottom:0.5rem;
+padding-top:1rem;
+font-family: "Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.color-box{
+  border-radius: .35rem;
+  font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15) ;
+padding: 1.25rem;
+text-align: left;
+}
+.color-title{
+  font-size: 1rem;
+font-weight: 400;
+min-height: 1px;
+}
+.color-code{
+ font-size: small;
+}
+
+p{
+  margin-top: 0;
+margin-bottom: 1rem;
+font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #858796;
+text-align: left;
+}
+a{
+  color: #4e73df;
+text-decoration: none;
+background-color: transparent;
+}
+
+.line-chart { 
+  grid-area: linee;
+  padding: 2rem;
+width:40rem;
+margin-left: 3rem;
+height: 22rem;
+box-shadow: 0 1rem 1.75rem 0 rgba(58,59,69,.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.doughnut-chart {
+  margin-top: -26rem; 
+  margin-left: 49rem;
+  grid-area: doughnut;
+  box-shadow: 0 1rem 1.75rem 0 rgba(58,59,69,.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+width:23rem;
+height: 22rem;
+padding: 2rem;
+}
+
+.proj-prog-div {
+  box-shadow: 0 1rem 1.75rem 0 rgba(58,59,69,.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 30rem;
+  margin-left: 3rem;
+  padding:2rem;
+  margin-top: 2rem;
+}
+.undraw-div { 
+  width: 33rem;
+  padding:2rem;
+  margin-top: -24.5rem; 
+  margin-left: 39.5rem;
+  box-shadow: 0 1rem 1.75rem 0 rgba(58,59,69,.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+.color-grid { 
+  width: 42.5%;
+  padding: 2rem;
+  margin-left: 1rem;
+  margin-top: -6rem;
+}
+.color-boxes-div{
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+
+}
+.notes-div { width: 33rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 1.75rem 0 rgba(58,59,69,.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 39.5rem;
+  margin-top: -20rem; 
+
+ }
+
+.charts-div{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.title-icon-div{
+  display: flex;
+  color: #4e73df;
+  justify-content: space-between;
+  font-weight: 700;
 }
