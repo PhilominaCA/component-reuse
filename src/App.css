@@ -218,17 +218,16 @@ a{
   padding: 2rem;
   width:40rem;
   margin-left: 3rem;
-  height: 22rem;
+  height: 24rem;
   box-shadow: 0 1rem 1.75rem 0 rgba(58,59,69,.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .doughnut-chart {
-  margin-top: -26rem; 
+  margin-top: -28rem; 
   margin-left: 49rem;
-  grid-area: doughnut;
   box-shadow: 0 1rem 1.75rem 0 rgba(58,59,69,.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width:23rem;
-  height: 22rem;
+  height: 24rem;
   padding: 2rem;
 }
 

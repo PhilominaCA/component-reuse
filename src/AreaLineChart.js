@@ -5,7 +5,12 @@ import { Line } from "react-chartjs-2";
 export function AreaLineChart() {
   const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   const options = {
-    responsive: true,
+    plugins:{
+    legend:
+    {
+      display:false
+    }
+    },
     scales: {
       y: {
         type: "linear",
@@ -45,7 +50,6 @@ export function AreaLineChart() {
   const data = {
     datasets: [
       {
-        label: "Earnings",
         data: [
           0,
           10000,
@@ -60,11 +64,12 @@ export function AreaLineChart() {
           25000,
           40000
         ],
+
         borderColor: "#4e73df",
         backgroundColor: "#4e73df",
         tension: "0.3"
       }
     ]
   };
-  return (<div><Line options={options} data={data} /></div>);
+  return (<div style={{paddingTop:"1rem",paddingBottom:"2rem"}}><Line options={options} data={data} /></div>);
 }
